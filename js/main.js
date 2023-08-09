@@ -179,8 +179,10 @@ function rerender(boolValue) {
 function clearTasks(btn) {
     if (btn.dataset.type === "newTasks") {
         rerender(true);
+        setCountTasks(newTasksCount, newTasks.children.length);
     } else {
         rerender(false);
+        setCountTasks(completedCount, newTasks.children.length);
     }
 }
 // End Function To Clear All Tasks In Tasks Div.
