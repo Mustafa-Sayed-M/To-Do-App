@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="To Do App">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Start App -->
+    <div class="app d-flex flex-column justify-content-between">
+        <!-- Start Header -->
+        <header class="bg-main-color white-color">
+            <nav class="navbar">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand white-color fs-6">TO DO LIST</a>
+                    <div class="time"></div>
+                    <div class="date"></div>
+                </div>
+            </nav>
+        </header>
+        <!-- End Header -->
+        <!-- Start Content -->
+        <div class="content ">
+            <div class="container">
+                <form onsubmit="preventDefault(event)" action="" class="position-relative mt-5 mb-5">
+                    <input type="text" placeholder="Enter Your Task Here" class="p-2 w-100 rounded-3">
+                    <button type="submit" class="bg-second-color  white-color h-100 px-4 border-0 rounded-end position-absolute end-0 top-50 translate-middle-y">+ Add</button>
+                </form>
+                <div class="new-tasks">
+                    <div class="head d-flex align-items-center justify-content-between mb-4">
+                        <h5 class="position-relative">Tasks</h5>
+                        <button onclick="clearTasks(this)" data-type="newTasks" type="button" class="ms-auto me-2 border-0 bg-main-color white-color rounded-3 p-1 px-2">Clear</button>
+                        <span class="new-tasks-count count bg-main-color d-flex align-items-center justify-content-center rounded-circle white-color">0</span>
+                    </div>
+                    <div class="tasks text-center">No Tasks Found Yet.</div>
+                </div>
+                <hr>
+                <div class="completed-tasks">
+                    <div class="head d-flex align-items-center justify-content-between mb-4">
+                        <h5 class="position-relative">Completed</h5>
+                        <button onclick="clearTasks(this)" type="button" class="ms-auto me-2 border-0 bg-main-color white-color rounded-3 p-1 px-2">Clear</button>
+                        <span class="completed-count count bg-main-color d-flex align-items-center justify-content-center rounded-circle white-color">0</span>
+                    </div>
+                    <div class="tasks text-center">No Tasks Found Yet.</div>
+                </div>
+            </div>
+        </div>
+        <!-- End Content -->
+        <!-- Start Footer -->
+        <footer  class="bg-main-color text-center py-2 white-color">Created With Mustafa Sayed.</footer>
+        <!-- End Footer -->
+    </div>
+    <!-- End App -->
+    <!-- Main Js -->
+    <script src="js/main.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* Start Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* End Google Fonts */
+/* Start Variables */
+:root {
+    /* Events ' Hover ' */
+    --opacity: 85%;
+    /* Colors */
+    --main-color: #6F31DC;
+    --second-color: #63439B;
+    --white-color: #ffffff;
+    --grey-color: #dee2e6;
+    --done-task: green;
+    /* Animations */
+    --transition: ease-in-out 300ms;
+}
+/* End Variables */
+/* Start Global Rules */
+input {
+    outline: none;
+    font-family: inherit !important;
+}
+/* End Global Rules */
+/* Start Colors */
+.main-color {
+    color: var(--main-color) !important;
+}
+.second-color {
+    color: var(--second-color) !important;
+}
+.white-color {
+    color: var(--white-color) !important;
+}
+.bg-main-color {
+    background-color: var(--main-color) !important;
+}
+.bg-second-color {
+    background-color: var(--second-color) !important;
+}
+.bg-white-color {
+    background-color: var(--white-color) !important;
+}
+/* End Colors */
+/* Start Borders */
+.border-main-color {
+    border-color: var(--main-color) !important;
+}
+/* End Borders */
+/* Start Body */
+body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif !important;
+}
+/* End Body */
+/* Start App */
+.app {
+    min-height: 100vh;
+}
+/* End App */
+/* Start content */
+.content form input {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+.content .head h5 {
+    width: fit-content;
+}
+.content .head h5::before {
+    left: 0;
+    bottom: -5px;
+    width: 30%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: var(--main-color);
+}
+.content .head .count {
+    width: 25px;
+    height: 25px;
+}
+.content form button {
+    transition: var(--transition);
+}
+.content form button:hover {
+    background-color: var(--main-color) !important;
+}
+.content .tasks .task {
+    gap: 5px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: var(--transition);
+    background-color: var(--grey-color);
+}
+.content .tasks .task.done,
+.content .tasks .task:hover {
+    opacity: .7;
+}
+.content .tasks .task p {
+    margin: 0;
+}
+.content .tasks .task.done p {
+    text-decoration: line-through;
+}
+.content .tasks .task input {
+    accent-color: var(--done-task);
+}
+/* End content */
