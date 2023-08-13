@@ -182,7 +182,7 @@ function clearTasks(btn) {
         setCountTasks(newTasksCount, newTasks.children.length);
     } else {
         rerender(false);
-        setCountTasks(completedCount, newTasks.children.length);
+        setCountTasks(completedCount, completedCount.children.length);
     }
 }
 // End Function To Clear All Tasks In Tasks Div.
