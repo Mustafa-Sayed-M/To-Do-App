@@ -1,8 +1,8 @@
 ## Name Project:
-### To Do App
+To Do App
 -----------------------------
 ## Url:
-### https://mustafa-sayed-m.github.io/To-Do-App/
+https://mustafa-sayed-m.github.io/To-Do-App/
 -----------------------------
 ## Colors:
 {
@@ -14,13 +14,13 @@
 }
 -----------------------------
 ## Fonts:
-### { googleFonts: [ "Roboto", "sans-serif" ] }
+{ googleFonts: [ "Roboto", "sans-serif" ] }
 -----------------------------
 ## Events:
-### { hover: { Opacity: 85% } }
+{ hover: { Opacity: 85% } }
 -----------------------------
 ## Animations:
-### { transition: {duration: ease-in-out, timing: 300ms} }
+{ transition: {duration: ease-in-out, timing: 300ms} }
 -----------------------------
 ## Tools:
-### { HTML, CSS, BOOTSTRAP, JS: "Pure", VS_CODE, GITHUB}
+{ HTML, CSS, BOOTSTRAP, JS: "Pure", VS_CODE, GITHUB}
